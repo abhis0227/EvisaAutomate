@@ -1,0 +1,17 @@
+com\evisa\qa\testcases\Renew_Visa_Test.class
+com\evisa\qa\testcases\HomePageTest.class
+com\evisa\qa\testcases\ApplicantionSummaryTest.class
+com\evisa\qa\testcases\Accreditation_RequestTest.class
+com\evisa\qa\testcases\AdditionalPageTest.class
+com\evisa\qa\testcases\VisaEligiPageTest.class
+com\evisa\qa\testcases\TransferPassportTest.class
+com\evisa\qa\testcases\database_connection.class
+com\evisa\qa\testcases\Extend_Visa_Test.class
+com\evisa\qa\testcases\TransferRenewTest.class
+com\evisa\qa\testcases\SubmissionSummaryTest.class
+com\evisa\qa\testcases\LoginPageTest.class
+com\evisa\qa\testcases\Sponsored_VisaTest.class
+com\ee\qa\tests\EE_Login_test.class
+com\evisa\qa\testcases\Required_DocumentPageTest.class
+com\evisa\qa\testcases\ConfirmDetailsTest.class
+com\evisa\qa\testcases\DGPR_Login_Test.class
