@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 8, Time elapsed: 131.59 s <<< FAILURE! - in TestSuite
+eVisaLogoTest(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 0.08 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest(LoginPageTest.java:39)
+
+SetUp(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 68.181 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out waiting for page to load.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ROWLSIT063WZMV1', ip: '10.38.90.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:26339/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9be8941a-5f6f-4f1d-bcd1-ce49895c8a11
+	at com.evisa.qa.testcases.LoginPageTest.SetUp(LoginPageTest.java:32)
+
+SetUp(com.evisa.qa.testcases.Sponsored_VisaTest)  Time elapsed: 129.716 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out waiting for page to load.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ROWLSIT063WZMV1', ip: '10.38.90.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:22869/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a870505e-03b1-42d7-bf0d-cb4dfc54db5e
+	at com.evisa.qa.testcases.Sponsored_VisaTest.SetUp(Sponsored_VisaTest.java:74)
+

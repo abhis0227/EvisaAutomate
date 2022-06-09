@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="ChromeTest(failed)">
+    <parameter name="browser" value="IE"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.evisa.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="eVisaLogoTest"/>
+        </methods>
+      </class> <!-- com.evisa.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" verbose="0" name="IETest(failed)">
+    <parameter name="browser" value="IE"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.evisa.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="eVisaLogoTest"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- com.evisa.qa.testcases.LoginPageTest -->
+      <class name="com.evisa.qa.testcases.Sponsored_VisaTest">
+        <methods>
+          <include name="ApplyVisa_Sponsored"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.evisa.qa.testcases.Sponsored_VisaTest -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
