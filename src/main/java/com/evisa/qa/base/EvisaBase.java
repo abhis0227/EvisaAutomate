@@ -1,5 +1,5 @@
 package com.evisa.qa.base;
-
+//Abhishek
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -73,7 +72,8 @@ public class EvisaBase {
 			options.setAcceptInsecureCerts(true);
 			driver = new FirefoxDriver();
 			// driver.set(new FirefoxDriver());
-		} else if (browserName.equals("IE")) {
+		} 
+		else if (browserName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver", "C:\\Selenium\\IEDriverServer_x64_3.150.2\\IEDriverServer.exe");
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);

@@ -55,15 +55,15 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 09 14:59:50 GST 2022</td>
+<td>Started on:</td><td>Sun Jun 12 09:52:53 GST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (129 ms)</td>
+<tr><td>Total time:</td><td>230 seconds (230772 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>Smoke </td>
+<td>Included groups:</td><td>Regression Smoke </td>
 </tr><tr>
-<td>Excluded groups:</td><td>Regression </td>
+<td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
@@ -75,20 +75,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest()'><b>eVisaLogoTest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.evisa.qa.pages.LoginPage.validateEvisaLogo(LoginPage.java:49)
-	at com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest(LoginPageTest.java:39)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495792375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace495792375'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.evisa.qa.pages.LoginPage.validateEvisaLogo(LoginPage.java:49)
-	at com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest(LoginPageTest.java:39)
+<td title='com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored()'><b>ApplyVisa_Sponsored</b><br>Test class: com.evisa.qa.testcases.Sponsored_VisaTest<br>Parameters: 1066017, Employment Visa - 1, Employment Visa - 1, AUSTRALIA, AUSTRALIA, TORU110, Passport, 01-03-2022, 01-01-2029, AUSTRALIA, , SANTOSH, SINGH, Male, 01-01-1989, INDIA, ABHI, AIRLINE PILOT, 5132045, 18/36070, USHA, Single, , AUSTRALIA, ABHISHEK, Father (includes step-father), 123</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ROWLSIT063WZMV1&apos;, ip: &apos;10.38.90.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHISH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7602cb2576681c1bfcde43d61ecef3ca
+*** Element info: {Using=id, value=occuCode}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at com.evisa.qa.pages.AdditionalDetailsPage.IsElementPresent(AdditionalDetailsPage.java:60)
+	at com.evisa.qa.pages.AdditionalDetailsPage.Sponsored_AdditionalDetPage(AdditionalDetailsPage.java:107)
+	at com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored(Sponsored_VisaTest.java:95)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220661927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220661927'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ROWLSIT063WZMV1&apos;, ip: &apos;10.38.90.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHISH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7602cb2576681c1bfcde43d61ecef3ca
+*** Element info: {Using=id, value=occuCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at com.evisa.qa.pages.AdditionalDetailsPage.IsElementPresent(AdditionalDetailsPage.java:60)
+	at com.evisa.qa.pages.AdditionalDetailsPage.Sponsored_AdditionalDetPage(AdditionalDetailsPage.java:107)
+	at com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored(Sponsored_VisaTest.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,8 +155,31 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
+<td>23</td>
+<td>com.evisa.qa.testcases.Sponsored_VisaTest@1a968a59</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored()'><b>ApplyVisa_Sponsored</b><br>Test class: com.evisa.qa.testcases.Sponsored_VisaTest<br>Parameters: 1066017, Employment Visa - 1, Employment Visa - 1, AUSTRALIA, AUSTRALIA, TORU101, Passport, 01-03-2022, 01-01-2029, AUSTRALIA, , SATNAM, MEHRA, Male, 01-01-1989, INDIA, ABHI, AIRLINE PILOT, 5132045, 18/36070, USHA, Single, , AUSTRALIA, ABHISHEK, Father (includes step-father), 123</td>
+<td></td>
+<td>83</td>
+<td>com.evisa.qa.testcases.Sponsored_VisaTest@1a968a59</td></tr>
+<tr>
+<td title='com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest()'><b>eVisaLogoTest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
+<td></td>
 <td>0</td>
-<td>com.evisa.qa.testcases.LoginPageTest@39c0f4a</td></tr>
+<td>com.evisa.qa.testcases.LoginPageTest@548e7350</td></tr>
+<tr>
+<td title='com.evisa.qa.testcases.LoginPageTest.logintest()'><b>logintest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.evisa.qa.testcases.LoginPageTest@548e7350</td></tr>
 </table><p>
 </body>
 </html>
