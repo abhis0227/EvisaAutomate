@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 12 09:52:53 GST 2022</td>
+<td>Started on:</td><td>Mon Jun 13 10:28:08 GST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>230 seconds (230772 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40919 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Regression Smoke </td>
 </tr><tr>
@@ -75,56 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored()'><b>ApplyVisa_Sponsored</b><br>Test class: com.evisa.qa.testcases.Sponsored_VisaTest<br>Parameters: 1066017, Employment Visa - 1, Employment Visa - 1, AUSTRALIA, AUSTRALIA, TORU110, Passport, 01-03-2022, 01-01-2029, AUSTRALIA, , SANTOSH, SINGH, Male, 01-01-1989, INDIA, ABHI, AIRLINE PILOT, 5132045, 18/36070, USHA, Single, , AUSTRALIA, ABHISHEK, Father (includes step-father), 123</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=102.0.5005.63)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ROWLSIT063WZMV1&apos;, ip: &apos;10.38.90.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHISH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7602cb2576681c1bfcde43d61ecef3ca
-*** Element info: {Using=id, value=occuCode}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ById.findElements(By.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at com.evisa.qa.pages.AdditionalDetailsPage.IsElementPresent(AdditionalDetailsPage.java:60)
-	at com.evisa.qa.pages.AdditionalDetailsPage.Sponsored_AdditionalDetPage(AdditionalDetailsPage.java:107)
-	at com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored(Sponsored_VisaTest.java:95)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220661927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace220661927'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=102.0.5005.63)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ROWLSIT063WZMV1&apos;, ip: &apos;10.38.90.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHISH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7602cb2576681c1bfcde43d61ecef3ca
-*** Element info: {Using=id, value=occuCode}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
-	at org.openqa.selenium.By$ById.findElements(By.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at com.evisa.qa.pages.AdditionalDetailsPage.IsElementPresent(AdditionalDetailsPage.java:60)
-	at com.evisa.qa.pages.AdditionalDetailsPage.Sponsored_AdditionalDetPage(AdditionalDetailsPage.java:107)
-	at com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored(Sponsored_VisaTest.java:95)
+<td title='com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest()'><b>HomePage_LogoTest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest(LoginPageTest.java:55)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398241764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398241764'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest(LoginPageTest.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,31 +117,53 @@ Session ID: 7602cb2576681c1bfcde43d61ecef3ca
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>23</td>
-<td>com.evisa.qa.testcases.Sponsored_VisaTest@1a968a59</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>8</td>
+<td>com.evisa.qa.testcases.LoginPageTest@204f30ec</td></tr>
 <tr>
-<td title='com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored()'><b>ApplyVisa_Sponsored</b><br>Test class: com.evisa.qa.testcases.Sponsored_VisaTest<br>Parameters: 1066017, Employment Visa - 1, Employment Visa - 1, AUSTRALIA, AUSTRALIA, TORU101, Passport, 01-03-2022, 01-01-2029, AUSTRALIA, , SATNAM, MEHRA, Male, 01-01-1989, INDIA, ABHI, AIRLINE PILOT, 5132045, 18/36070, USHA, Single, , AUSTRALIA, ABHISHEK, Father (includes step-father), 123</td>
-<td></td>
-<td>83</td>
-<td>com.evisa.qa.testcases.Sponsored_VisaTest@1a968a59</td></tr>
-<tr>
-<td title='com.evisa.qa.testcases.LoginPageTest.eVisaLogoTest()'><b>eVisaLogoTest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
-<td></td>
+<td title='com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest()'><b>LoginPage_LogoTest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest(LoginPageTest.java:43)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace951741667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951741667'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest(LoginPageTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
 <td>0</td>
-<td>com.evisa.qa.testcases.LoginPageTest@548e7350</td></tr>
-<tr>
-<td title='com.evisa.qa.testcases.LoginPageTest.logintest()'><b>logintest</b><br>Test class: com.evisa.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>6</td>
-<td>com.evisa.qa.testcases.LoginPageTest@548e7350</td></tr>
+<td>com.evisa.qa.testcases.LoginPageTest@204f30ec</td></tr>
 </table><p>
 </body>
 </html>
