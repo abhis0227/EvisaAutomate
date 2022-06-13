@@ -26,6 +26,7 @@ com\evisa\qa\pages\Acc_RequiredDocsPage.class
 com\evisa\qa\pages\TR_AdditionalDetails.class
 com\evisa\qa\pages\LoginPage.class
 com\evisa\qa\pages\Ext_ApplicantSummary.class
+com\evisa\qa\util\Takescreenshot.class
 com\vis\qa\pages\IDEPage.class
 com\evisa\qa\pages\CheckDocsQueue.class
 com\evisa\qa\pages\TP_ConfirmPage.class

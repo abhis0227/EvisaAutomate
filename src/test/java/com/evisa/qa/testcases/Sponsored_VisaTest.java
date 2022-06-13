@@ -80,7 +80,7 @@ public class Sponsored_VisaTest extends EvisaBase {
 
 	}
 
-	@Test(dataProvider = "Sp_Visa", priority = 1,groups = "Regression")
+	@Test(dataProvider = "Sp_Visa", priority = 1,groups = "Regression", enabled = false)
 	public void ApplyVisa_Sponsored(String Sponsor_CR, String Visa_Type, String Visa_Subtype, String Nationality,
 			String Document_Nationality, String TD_Number, String TD_Type, String Issue_Date, String Expiry_Date,
 			String Place_of_Issue, String Full_Name, String Given_Name, String Family_Name, String Gender, String DOB,
