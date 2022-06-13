@@ -4,6 +4,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,7 @@ import com.evisa.qa.pages.LoginPage;
 import junit.framework.Assert;
 
 @SuppressWarnings("unused")
+@Listeners()
 public class LoginPageTest extends EvisaBase {
 
 	LoginPage loginpage;
@@ -34,20 +36,22 @@ public class LoginPageTest extends EvisaBase {
 	}
 
 	@Test(priority = 1,groups = "Smoke")
-	public void eVisaLogoTest() {
+	public void LoginPage_LogoTest() {
 		loginpage = new LoginPage();
 		boolean logo_disp = loginpage.validateEvisaLogo();
 		Assert.assertTrue(logo_disp);
+
 	}
 
 	@Test(priority = 2, groups = "Regression")
-	public void logintest() throws InterruptedException {
+	public void HomePage_LogoTest() throws InterruptedException {
 		loginpage = new LoginPage();
 		// homepage = new HomePage();
 		// loginpage = loginpage.ClickAdvance();
 		homepage = loginpage.login(Prop.getProperty("username"), Prop.getProperty("password"));
 		String HomePage_Title = homepage.validateLoginPageTiltle();
 		Assert.assertEquals("Sponsor Home", HomePage_Title);
+
 	}
 
 	@AfterMethod(groups = {"Smoke","Regression"})

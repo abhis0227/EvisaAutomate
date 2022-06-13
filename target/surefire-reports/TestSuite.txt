@@ -1,17 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 235.22 s <<< FAILURE! - in TestSuite
-ApplyVisa_Sponsored(com.evisa.qa.testcases.Sponsored_VisaTest)  Time elapsed: 23.857 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=102.0.5005.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ROWLSIT063WZMV1', ip: '10.38.90.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABHISH~1.SHA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7602cb2576681c1bfcde43d61ecef3ca
-*** Element info: {Using=id, value=occuCode}
-	at com.evisa.qa.testcases.Sponsored_VisaTest.ApplyVisa_Sponsored(Sponsored_VisaTest.java:95)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.135 s <<< FAILURE! - in TestSuite
+LoginPage_LogoTest(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 0.226 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest(LoginPageTest.java:43)
+
+HomePage_LogoTest(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 8.222 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest(LoginPageTest.java:55)
 
