@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="Listener.CustomListener"></listener>
 	</listeners>
-	<test thread-count="5" name="ChromeTest">
+	<test thread-count="3" name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<groups>
 			<run>
@@ -14,7 +14,19 @@
 		</groups>
 		<classes>
 			<class name="com.evisa.qa.testcases.LoginPageTest" />
-			<class name="com.evisa.qa.testcases.Sponsored_VisaTest" />
+		</classes>
+	</test>
+
+	<test thread-count="3" name="ChromeTest2" >
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+				<include name="Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.evisa.qa.testcases.ApplyVisaTest"/>
 		</classes>
 	</test>
 

@@ -42,10 +42,10 @@ public class database_conn extends EvisaBase {
 
 	}
 
-//	 public static void main(String[] s) throws ClassNotFoundException,
-//	 SQLException, IOException {
-//		database_conn db1 = new database_conn();
-//		db1.visa_app_status1();
-//	}
+	 public static void main(String[] s) throws ClassNotFoundException,
+	 SQLException, IOException {
+		database_conn db1 = new database_conn();
+		db1.visa_app_status1();
+	}
 
 };

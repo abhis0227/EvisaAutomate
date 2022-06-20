@@ -1,14 +1,12 @@
 package com.evisa.qa.testcases;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
 import com.evisa.qa.base.EvisaBase;
 import com.evisa.qa.pages.DGPR_HomePage;
 import com.evisa.qa.pages.DGPR_LoginPage;
@@ -17,8 +15,6 @@ import com.evisa.qa.pages.LoginPage;
 
 import junit.framework.Assert;
 
-@SuppressWarnings("unused")
-@Listeners()
 public class LoginPageTest extends EvisaBase {
 
 	LoginPage loginpage;
@@ -28,14 +24,16 @@ public class LoginPageTest extends EvisaBase {
 		super();
 
 	}
+
 	@Parameters("browser")
-	@BeforeMethod(groups = {"Smoke","Regression"})
-	public void SetUp(String browser ) {
+	@BeforeClass(groups = { "Smoke", "Regression" })
+//	@BeforeMethod(groups = { "Smoke", "Regression" })
+	public void SetUp(String browser) {
 		initialization(browser);
 
 	}
 
-	@Test(priority = 1,groups = "Smoke")
+	@Test(priority = 1, groups = "Smoke", enabled = true)
 	public void LoginPage_LogoTest() {
 		loginpage = new LoginPage();
 		boolean logo_disp = loginpage.validateEvisaLogo();
@@ -43,7 +41,7 @@ public class LoginPageTest extends EvisaBase {
 
 	}
 
-	@Test(priority = 2, groups = "Regression")
+	@Test(priority = 2, groups = "Regression", enabled = true)
 	public void HomePage_LogoTest() throws InterruptedException {
 		loginpage = new LoginPage();
 		// homepage = new HomePage();
@@ -54,9 +52,10 @@ public class LoginPageTest extends EvisaBase {
 
 	}
 
-	@AfterMethod(groups = {"Smoke","Regression"})
+//	@AfterMethod(groups = { "Smoke", "Regression" })
+	@AfterClass(groups = { "Smoke", "Regression" })
 	public void tearDown() {
-		driver.quit();
+		driver.close();
 	}
 
 }

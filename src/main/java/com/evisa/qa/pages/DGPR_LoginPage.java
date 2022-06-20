@@ -27,8 +27,9 @@ public class DGPR_LoginPage extends EvisaBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	public DGPR_HomePage login_dgpr(String username1, String password1) {
+	public DGPR_HomePage login_dgpr(String username1, String password1) throws InterruptedException {
 		username_dgpr.sendKeys(username1);
+		Thread.sleep(5000);
 		password_dgpr.sendKeys(password1);
 		LoginBtn_dgpr.click();
 		return new DGPR_HomePage();
@@ -41,11 +42,4 @@ public class DGPR_LoginPage extends EvisaBase {
 
 	}
 
-//	public static void main(String[] s) {
-//		DGPR_LoginPage dgpr_login = new DGPR_LoginPage();
-//		initialization_dgpr();
-//		PageFactory.initElements(driver, dgpr_login);
-//		dgpr_login.login_dgpr("gmanager1", "pass@w0rd");
-//
-//	}
 }

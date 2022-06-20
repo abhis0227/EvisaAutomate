@@ -20,14 +20,14 @@ public class HomePage extends EvisaBase {
 	@FindBy(linkText = "Apply for Sponsored Visa")
 	WebElement ApplySponsored;
 
-	@FindBy(id = "new-visa")
-	WebElement NewVisa;
+//	@FindBy(id = "new-visa")
+//	WebElement NewVisa;
+//
+//	@FindBy(id = "next-proceed")
+//	WebElement NextBtn;
 
-	@FindBy(id = "next-proceed")
-	WebElement NextBtn;
-
-	@FindBy(xpath = "//div[@id='DataTables_Table_0_filter']//input[@type='text' and @class='alphaNum']")
-	WebElement SearchBox;
+//	@FindBy(xpath = "//div[@id='DataTables_Table_0_filter']//input[@type='text' and @class='alphaNum']")
+//	WebElement SearchBox;
 
 	@FindBy(id = "findVisa")
 	WebElement FindVisa_Link;
@@ -50,21 +50,20 @@ public class HomePage extends EvisaBase {
 		return new VisaEligiWizard();
 	}
 
-	public VisaSelectPage ApplySpVisa() {
+	public CRSelectionPage ApplySpVisa() {
 		ApplyLink.click();
 		ApplySponsored.click();
-		return new VisaSelectPage();
+		return new CRSelectionPage();
 	}
 
-	public VisaSelectPage CR_Selection(String Sponsor_CR) throws InterruptedException {
-		SearchBox.sendKeys(Sponsor_CR);
-		Thread.sleep(500);
-		driver.findElement(By.xpath("//tbody[@role='alert']//tr//td[contains(text(),'" + Sponsor_CR + "')]")).click();
-		NewVisa.click();
-		NextBtn.click();
-		return new VisaSelectPage();
-
-	}
+//	public VisaSelectPage CR_Selection(String Sponsor_CR) throws InterruptedException {
+//		SearchBox.sendKeys(Sponsor_CR);
+//		Thread.sleep(500);
+//		driver.findElement(By.xpath("//tbody[@role='alert']//tr//td[contains(text(),'" + Sponsor_CR + "')]")).click();
+//		NewVisa.click();
+//		NextBtn.click();
+//		return new VisaSelectPage();
+//	}
 
 	public FindVisaPage GotoFindVisa() {
 		FindVisa_Link.click();

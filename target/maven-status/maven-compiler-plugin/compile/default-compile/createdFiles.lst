@@ -9,6 +9,7 @@ com\evisa\qa\pages\Acc_RegType.class
 com\evisa\qa\util\ReadGuru99ExcelFile.class
 com\evisa\qa\pages\Ext_AdditionalDetailsPage.class
 com\evisa\qa\pages\Renew_ConfirmDetails.class
+com\evisa\qa\pages\CRSelectionPage.class
 com\evisa\qa\util\TestUtil.class
 com\evisa\qa\pages\Extend_VisaPage.class
 com\evisa\qa\util\DataPro.class

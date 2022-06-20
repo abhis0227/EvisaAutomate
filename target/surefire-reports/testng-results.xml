@@ -1,135 +1,415 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="1" total="3" passed="0">
+<testng-results skipped="0" failed="2" ignored="2" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40919" started-at="2022-06-13T06:28:08Z" finished-at="2022-06-13T06:28:49Z">
+  <suite name="Suite" duration-ms="349120" started-at="2022-06-19T10:13:33 GST" finished-at="2022-06-19T10:19:22 GST">
     <groups>
       <group name="Regression">
-        <method signature="LoginPageTest.HomePage_LogoTest()[pri:2, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="HomePage_LogoTest" class="com.evisa.qa.testcases.LoginPageTest"/>
+        <method signature="ApplyVisaTest.ApplyVisa_Sponsored(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.evisa.qa.testcases.ApplyVisaTest@1d371b2d]" name="ApplyVisa_Sponsored" class="com.evisa.qa.testcases.ApplyVisaTest"/>
       </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginPageTest.LoginPage_LogoTest()[pri:1, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="LoginPage_LogoTest" class="com.evisa.qa.testcases.LoginPageTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="ChromeTest" duration-ms="40919" started-at="2022-06-13T06:28:08Z" finished-at="2022-06-13T06:28:49Z">
-      <class name="com.evisa.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="SetUp(java.lang.String)[pri:0, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="SetUp" is-config="true" duration-ms="10004" started-at="2022-06-13T06:28:08Z" finished-at="2022-06-13T06:28:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="LoginPage_LogoTest()[pri:1, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="LoginPage_LogoTest" duration-ms="212" started-at="2022-06-13T06:28:18Z" finished-at="2022-06-13T06:28:18Z">
-          <exception class="junit.framework.AssertionFailedError">
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertTrue(Assert.java:27)
-at com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest(LoginPageTest.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPage_LogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="897" started-at="2022-06-13T06:28:19Z" finished-at="2022-06-13T06:28:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SetUp(java.lang.String)[pri:0, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="SetUp" is-config="true" duration-ms="19338" started-at="2022-06-13T06:28:20Z" finished-at="2022-06-13T06:28:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="HomePage_LogoTest()[pri:2, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="HomePage_LogoTest" duration-ms="8221" started-at="2022-06-13T06:28:39Z" finished-at="2022-06-13T06:28:47Z">
-          <exception class="junit.framework.AssertionFailedError">
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertTrue(Assert.java:27)
-at com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest(LoginPageTest.java:55)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_LogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evisa.qa.testcases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="1021" started-at="2022-06-13T06:28:48Z" finished-at="2022-06-13T06:28:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.evisa.qa.testcases.LoginPageTest -->
+    <test name="ChromeTest" duration-ms="32" started-at="2022-06-19T10:13:33 GST" finished-at="2022-06-19T10:13:33 GST">
     </test> <!-- ChromeTest -->
+    <test name="ChromeTest2" duration-ms="347956" started-at="2022-06-19T10:13:35 GST" finished-at="2022-06-19T10:19:22 GST">
+      <class name="com.evisa.qa.testcases.ApplyVisaTest">
+        <test-method status="PASS" signature="SetUp(java.lang.String)[pri:0, instance:com.evisa.qa.testcases.ApplyVisaTest@1d371b2d]" name="SetUp" is-config="true" duration-ms="67794" started-at="2022-06-19T10:13:35 GST" finished-at="2022-06-19T10:14:43 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="ApplyVisa_Sponsored(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.evisa.qa.testcases.ApplyVisaTest@1d371b2d]" name="ApplyVisa_Sponsored" duration-ms="138422" started-at="2022-06-19T10:14:51 GST" data-provider="Sp_Visa" finished-at="2022-06-19T10:17:10 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[24080011]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Investor Visa - 15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Investor Visa 5 Year - 15E]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AUSTRIA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AUSTRIA]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[AAJ103]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Passport]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[01-03-2022]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[01-01-2029]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[AUSTRIA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[SHAMIN]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ALI]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[01-01-1989]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[ABHI]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[AIRLINE PILOT]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[0213191]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[18/36070]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[USHA]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[AUSTRALIA]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[ABHISHEK]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[Father (includes step-father)]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.evisa.qa.testcases.ApplyVisaTest.ApplyVisa_Sponsored(ApplyVisaTest.java:196)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyVisa_Sponsored -->
+        <test-method status="FAIL" signature="ApplyVisa_Sponsored(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.evisa.qa.testcases.ApplyVisaTest@1d371b2d]" name="ApplyVisa_Sponsored" duration-ms="131671" started-at="2022-06-19T10:17:11 GST" data-provider="Sp_Visa" finished-at="2022-06-19T10:19:22 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1066017]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Employment Visa - 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Employment Visa - 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[POLAND]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[POLAND]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[AAJ104]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Passport]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[01-03-2022]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[01-01-2029]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[AUSTRIA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[JATAR]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[SINGH]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[01-01-1989]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[ABHI]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[AIRLINE PILOT]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[5132045]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[18/36070]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[USHA]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[AUSTRALIA]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[ABHISHEK]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[Father (includes step-father)]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.evisa.qa.testcases.ApplyVisaTest.ApplyVisa_Sponsored(ApplyVisaTest.java:196)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyVisa_Sponsored -->
+      </class> <!-- com.evisa.qa.testcases.ApplyVisaTest -->
+    </test> <!-- ChromeTest2 -->
   </suite> <!-- Suite -->
 </testng-results>

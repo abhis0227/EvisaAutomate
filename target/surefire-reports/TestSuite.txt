@@ -1,12 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.135 s <<< FAILURE! - in TestSuite
-LoginPage_LogoTest(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 0.226 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at com.evisa.qa.testcases.LoginPageTest.LoginPage_LogoTest(LoginPageTest.java:43)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 352.622 s <<< FAILURE! - in TestSuite
+ApplyVisa_Sponsored(com.evisa.qa.testcases.ApplyVisaTest)  Time elapsed: 139.276 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false]
+	at com.evisa.qa.testcases.ApplyVisaTest.ApplyVisa_Sponsored(ApplyVisaTest.java:196)
 
-HomePage_LogoTest(com.evisa.qa.testcases.LoginPageTest)  Time elapsed: 8.222 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at com.evisa.qa.testcases.LoginPageTest.HomePage_LogoTest(LoginPageTest.java:55)
+ApplyVisa_Sponsored(com.evisa.qa.testcases.ApplyVisaTest)  Time elapsed: 131.94 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.evisa.qa.testcases.ApplyVisaTest.ApplyVisa_Sponsored(ApplyVisaTest.java:196)
 
