@@ -1,6 +1,6 @@
 package com.evisa.qa.base;
 
-//Abhishek
+//Abhishek Sharma
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -64,11 +64,11 @@ public class EvisaBase {
 			// driver.set(new FirefoxDriver());
 		} else if (browserName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver", "C:\\Selenium\\IEDriverServer_x64_3.150.2\\IEDriverServer.exe");
-			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-			InternetExplorerOptions options = new InternetExplorerOptions();
-			options.merge(cap);
-			driver = new InternetExplorerDriver();
+//			DesiredCapabilities cap = new DesiredCapabilities();
+//			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+//			InternetExplorerOptions options = new InternetExplorerOptions();
+//			options.merge(cap);
+//			driver = new InternetExplorerDriver();
 			// driver.set(new InternetExplorerDriver());
 		}
 
